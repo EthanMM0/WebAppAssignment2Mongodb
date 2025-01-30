@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // Connection
-const uri = 'mongodb+srv://dbUser01:Passw0rd001@assignment2.i0un5.mongodb.net/Marketplace?retryWrites=true&w=majority';
+const uri = ''; //Mongodb URI
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
